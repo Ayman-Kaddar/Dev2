@@ -1,0 +1,12 @@
+$("#signup-box-link").click(function(){
+  $("#login-box-link").removeClass("active");
+  $("#signup-box-link").addClass("active");
+  $(".email-signup").removeClass("hide");
+  $(".email-login").addClass("hide");
+});
+$("#login-box-link").click(function(){
+  $("#login-box-link").addClass("active");
+  $("#signup-box-link").removeClass("active");
+  $(".email-signup").addClass("hide")
+  $(".email-login").removeClass("hide");
+});
