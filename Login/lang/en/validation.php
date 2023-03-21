@@ -145,7 +145,7 @@ return [
     'starts_with' => 'The :attribute must start with one of the following: :values.',
     'string' => 'El campo :attribute debe ser un texto.',
     'timezone' => 'The :attribute must be a valid timezone.',
-    'unique' => 'The :attribute has already been taken.',
+    'unique' => 'El :attribute ya existe.',
     'uploaded' => 'The :attribute failed to upload.',
     'uppercase' => 'The :attribute must be uppercase.',
     'url' => 'The :attribute must be a valid URL.',
