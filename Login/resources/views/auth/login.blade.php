@@ -7,7 +7,7 @@
             <a href="#" id="signup-box-link">Registrar</a>
         </div>
         <div class="social-login">
-            <a href="{{route('login-github')}}">
+            <a href="{{route('login-facebook')}}">
                 <i class="fa fa-facebook fa-lg"></i>
                 Iniciar sesión con Facebook
             </a>
