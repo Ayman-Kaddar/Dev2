@@ -47,14 +47,14 @@ Route::get('/google-callback', function () {
     // $user->token
 });
 
-Route::get('/login-github', function () {
-    return Socialite::driver('github')->redirect();
-})->name('login-github');
+Route::get('/login-facebook', function () {
+    return Socialite::driver('facebook')->redirect();
+})->name('login-facebook');
 
-Route::get('/github-callback', function () {
-    $user = Socialite::driver('github')->user();
+Route::get('/facebook-callback', function () {
+    $user = Socialite::driver('facebook')->user();
     
-    $userExists = User::where('external_id',$user->id)->where('external_auth', 'github')->first();
+    $userExists = User::where('external_id',$user->id)->where('external_auth', 'facebook')->first();
     dd($userExists);
     //dd($userExists);
     if($userExists){
@@ -65,7 +65,7 @@ Route::get('/github-callback', function () {
             'email'=> $user->email,
             'avatar'=> $user->avatar,
             'external_id'=> $user->id,
-            'external_auth'=> 'github',
+            'external_auth'=> 'facebook',
         ]);
 
         Auth::login($userNew);
